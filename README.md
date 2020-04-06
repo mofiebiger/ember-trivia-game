@@ -1,7 +1,6 @@
 # ember-trivia-game
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This README outlines the configuration of the Ember Trivia application. 
 
 ## Prerequisites
 
@@ -39,7 +38,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `yarn lint:css`
 * `yarn lint:hbs`
 * `yarn lint:js`
-* `yarn lint:js -- --fix`
+* `yarn lint:js --fix`
 
 ### Formatting
 
