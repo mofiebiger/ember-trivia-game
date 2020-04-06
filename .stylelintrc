@@ -1,0 +1,53 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules"
+  ],
+  "ignoreFiles": [
+    "app/styles/normalize.css"
+  ],
+  "plugins": [
+    "stylelint-csstree-validator",
+    "stylelint-declaration-use-variable",
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "color-named": "never",
+    "color-no-hex": true,
+    "csstree/validator": {
+      "ignore": [
+        "composes",
+        "d"
+      ]
+    },
+    "custom-property-empty-line-before": null,
+    "no-descending-specificity": null,
+    "order/properties-order": [
+      [
+        "composes"
+      ], {
+        "unspecified": "bottomAlphabetical"
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "composes"
+        ]
+      }
+    ],
+    "scss/at-rule-no-unknown": null,
+    "sh-waqar/declaration-use-variable": [
+      [
+        "/color/",
+        {
+          "ignoreValues": ["transparent", "inherit"]
+        }
+      ]
+    ],
+    "value-list-comma-newline-after": "always-multi-line"
+  }
+}

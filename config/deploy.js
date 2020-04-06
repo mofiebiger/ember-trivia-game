@@ -1,39 +1,39 @@
 /* eslint-env node */
-"use strict";
+'use strict';
 
-module.exports = function(deployTarget) {
+module.exports = function (deployTarget) {
   let ENV = {
     build: {},
 
     s3: {
       accessKeyId: process.env.AWS_ACCESS_KEY_ID,
       secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-      bucket: "mo-ember-trivia-bucket",
-      region: "eu-west-1",
+      bucket: 'mo-ember-trivia-bucket',
+      region: 'eu-west-1',
       filePattern:
-        "**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2,html}"
+        '**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2,html}',
     },
 
-    "s3-index": {
+    's3-index': {
       accessKeyId: process.env.AWS_ACCESS_KEY_ID,
       secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-      bucket: "mo-ember-trivia-bucket",
-      region: "eu-west-1"
-    }
+      bucket: 'mo-ember-trivia-bucket',
+      region: 'eu-west-1',
+    },
   };
 
-  if (deployTarget === "development") {
-    ENV.build.environment = "development";
+  if (deployTarget === 'development') {
+    ENV.build.environment = 'development';
     // configure other plugins for development deploy target here
   }
 
-  if (deployTarget === "staging") {
-    ENV.build.environment = "production";
+  if (deployTarget === 'staging') {
+    ENV.build.environment = 'production';
     // configure other plugins for staging deploy target here
   }
 
-  if (deployTarget === "production") {
-    ENV.build.environment = "production";
+  if (deployTarget === 'production') {
+    ENV.build.environment = 'production';
     // configure other plugins for production deploy target here
   }
 
