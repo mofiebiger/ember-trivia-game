@@ -1,3 +1,9 @@
-<h1>{{t "hello.world"}}</h1>
+<div class="application-container">
+  <ApplicationHeader
+    @src="../assets/ember-trivia-logo.png"
+    @alt={{t "alt.ember-trivia-logo"}}
+  />
+  <h1>{{t "hello.world"}}</h1>
 
-{{outlet}}
+  {{outlet}}
+</div>
