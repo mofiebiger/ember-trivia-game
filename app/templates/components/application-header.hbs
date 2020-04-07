@@ -1,0 +1,13 @@
+<div local-class="header {{if (eq @style "plain-header") "secondary-header"}}">
+  {{#if @text}}
+    <h1 data-test-header-text>{{@text}}</h1>
+  {{else}}
+    <img
+      data-test-header-img
+      local-class="header-img"
+      src={{@src}}
+      alt={{@alt}}
+    />
+  {{/if}}
+</div>
+{{yield}}
