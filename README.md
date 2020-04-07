@@ -1,14 +1,14 @@
 # ember-trivia-game
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This README outlines the configuration of the Ember Trivia application. 
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
+* [Node.js](https://nodejs.org/) (with npm) - `brew install node@8 && brew link node@8`
+* [Yarn] (with npm) - `npm install  --global yarn@v1.5.1`
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
@@ -16,7 +16,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * `cd ember-trivia-game`
-* `npm install`
+* `yarn install`
 
 ## Running / Development
 
@@ -35,9 +35,17 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Linting
 
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+* `yarn lint:css`
+* `yarn lint:hbs`
+* `yarn lint:js`
+* `yarn lint:js --fix`
+
+### Formatting
+
+* `yarn format`
+
+Code formatting is provided by [Prettier](https://github.com/prettier/prettier)
+It's recommended you configure your editor to handle formatting on every file save. See [Editor integration docs](https://prettier.io/docs/en/editors.html) for instructions on how to configure this.
 
 ### Building
 
@@ -46,7 +54,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+* deployment to production is done automatically on each Pull Request to master via (https://loving-nightingale-e3329b.netlify.com/)
 
 ## Further Reading / Useful Links
 
