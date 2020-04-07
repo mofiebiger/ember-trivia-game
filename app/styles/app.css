@@ -9,7 +9,11 @@ body {
 }
 
 h1 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico';
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
 }
 
 .application-container {
