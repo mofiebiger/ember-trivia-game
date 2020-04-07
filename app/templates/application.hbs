@@ -1,3 +1,17 @@
-<h1>{{t "hello.world"}}</h1>
+<div class="application-container">
+  <ApplicationHeader
+    @src="../assets/ember-trivia-logo.png"
+    @alt={{t "alt.ember-trivia-logo"}}
+  />
 
-{{outlet}}
+  <h1>
+    {{t "hello.world"}}
+  </h1>
+  {{outlet}}
+
+  <ApplicationFooter
+    @text={{t "footer.made-with-love"}}
+    @src="../assets/tomster-with-heart.png"
+    @alt={{t "alt.tomster-sending-love"}}
+  />
+</div>

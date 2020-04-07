@@ -1,2 +1,9 @@
 hello:
   world: Hello World!
+
+alt:
+  ember-trivia-logo: Ember Trivia Logo
+  tomster-sending-love: Tomster Sending Love
+
+footer:
+  made-with-love: Made with LOVE by Mo
